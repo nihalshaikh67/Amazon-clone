@@ -44,7 +44,7 @@ if(user){
                      <h4>E-mail</h4>
                      <input value={email} onChange={(e)=> setEmail(e.target.value)}/>
                      <h4>Password</h4>
-                     <input value={password} onChange={(e)=> setPassword(e.target.value)}/>
+                     <input type="password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
                      <button type="submit" onClick={signIn} className="login-signIn">
                          Sign In
                      </button>

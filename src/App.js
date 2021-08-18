@@ -30,17 +30,17 @@ auth.onAuthStateChanged((authUSer)=>{
     <BrowserRouter>
     <div className="App">
         <Switch>
-        <Route path="/checkout">
-            <Header/>
-           <Checkout/>
-          </Route>
-        <Route path="/product:key">
-            <Header/>
-           <SingleProduct/>
-          </Route>
-        <Route path="/register">
-           <Register/>
-          </Route>
+            <Route path="/checkout">
+                <Header/>
+              <Checkout/>
+            </Route>
+            <Route path="/product/:id">
+                <Header/>
+              <SingleProduct/>
+            </Route>
+            <Route path="/register">
+              <Register/>
+            </Route>
         <Route path="/login">
            <Login/>
           </Route>
